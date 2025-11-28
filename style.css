@@ -1,0 +1,31 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 12px;
+  background: #f7f7f7;
+  color: #222;
+}
+
+.site-header { background:#333; color:#fff; padding:16px; border-radius:8px; text-align:center; }
+.site-nav { margin:10px 0; display:flex; gap:8px; flex-wrap:wrap; }
+.site-nav a { text-decoration:none; background:#fff; padding:6px 10px; border-radius:6px; }
+
+.content { background:#fff; padding:16px; border-radius:8px; margin-bottom:10px; }
+.hero { width:100%; border-radius:8px; margin-top:10px; }
+
+/* ad box */
+.ad { background:#fffbe6; padding:12px; border:2px dashed orange; border-radius:8px; margin-bottom:10px; width:100%; }
+
+/* small hover effect for button links (bonus) */
+.site-nav a:hover { transform: translateY(-2px); box-shadow:0 6px 14px rgba(0,0,0,0.08); transition: all .15s ease; }
+
+/* tablet layout */
+@media (min-width: 576px) {
+  .container { display:grid; grid-template-columns: 1fr 2fr; gap:12px; }
+}
+
+/* desktop layout */
+@media (min-width: 992px) {
+  main { grid-column: 2 / 3; }
+}

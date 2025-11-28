@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personality Tests</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Personality Tests</h1>
+  </header>
+
+  <nav class="site-nav">
+    <a href="#">Home</a>
+    <a href="#">Tests</a>
+    <a href="#">About</a>
+  </nav>
+
+  <main class="content">
+    <h2>Try these tests</h2>
+    <ul>
+      <li><a href="https://www.16personalities.com/">16 Personalities</a></li>
+      <li><a href="https://bigfive-test.com/">Big Five</a></li>
+      <li><a href="https://enneagramtest.net/">Enneagram</a></li>
+    </ul>
+    <img src="images/cat1.jpg" alt="Cute cat" class="hero">
+  </main>
+
+  <aside class="ad">
+    <h3>Ad</h3>
+    <img src="images/ad-250.png" alt="Ad image">
+  </aside>
+
+  <footer class="footer">
+    <p>© 2025 Personality Tests</p>
+  </footer>
+</body>
+</html>
