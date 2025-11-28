@@ -1,39 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Personality Tests</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Tests</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <h1>Personality Tests</h1>
-  </header>
 
-  <nav class="site-nav">
-    <a href="#">Home</a>
-    <a href="#">Tests</a>
-    <a href="#">About</a>
-  </nav>
+<div class="container">
 
-  <main class="content">
-    <h2>Try these tests</h2>
-    <ul>
-      <li><a href="https://www.16personalities.com/">16 Personalities</a></li>
-      <li><a href="https://bigfive-test.com/">Big Five</a></li>
-      <li><a href="https://enneagramtest.net/">Enneagram</a></li>
-    </ul>
-    <img src="images/cat1.jpg" alt="Cute cat" class="hero">
-  </main>
+    <header class="header">
+        <h1>Personality Tests</h1>
+    </header>
 
-  <aside class="ad">
-    <h3>Ad</h3>
-    <img src="images/ad-250.png" alt="Ad image">
-  </aside>
+    <nav class="sidebar">
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">16 Personalities</a></li>
+            <li><a href="#">Big Five</a></li>
+            <li><a href="#">Enneagram</a></li>
+            <li><a href="#">IQ Tests</a></li>
+        </ul>
+    </nav>
 
-  <footer class="footer">
-    <p>© 2025 Personality Tests</p>
-  </footer>
+    <main class="content">
+        <h2>Explore Personality Types</h2>
+        <p>
+            Personality tests help you understand your strengths, weaknesses, preferences,
+            communication style, emotional tendencies, and more.
+        </p>
+
+        <h3>Popular Online Tests</h3>
+        <ul>
+            <li><a href="https://www.16personalities.com/">16 Personalities (MBTI)</a></li>
+            <li><a href="https://bigfive-test.com/">Big Five Test</a></li>
+            <li><a href="https://enneagramtest.net/">Enneagram Test</a></li>
+        </ul>
+
+        <img src="images/test-banner.jpg" class="main-img" alt="Personality test image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id semper lorem. Pellentesque porta
+            sem sed ligula mattis, a sollicitudin massa placerat.</p>
+    </main>
+
+    <aside class="ad">
+        <h3>Ad</h3>
+        <img src="images/ad-250.png" alt="Ad Image">
+        <p>Discover your hidden strengths!</p>
+    </aside>
+
+    <footer class="footer">
+        <p>© 2025 Personality Tests</p>
+    </footer>
+
+</div>
+
 </body>
 </html>
+
