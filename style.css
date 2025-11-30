@@ -1,25 +1,25 @@
-/* Basic page look */
+
 body {
   background: #f4f6f8;
   color: #222;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-/* header */
+
 .site-header {
   background: linear-gradient(90deg,#2c3e50,#4b6584);
   color: white;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* cards */
+
 .card {
   border: none;
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(20,20,20,0.05);
 }
 
-/* sidebar links */
+
 .sidebar-card .nav-link {
   color: #333;
   padding: 6px 0;
@@ -31,16 +31,16 @@ body {
   transition: 0.15s ease;
 }
 
-/* ad card style */
+
 .ad-card {
   background: linear-gradient(180deg,#fffbe6,#fff4d1);
   border: 2px dashed #f0a500;
 }
 
-/* content card */
+
 .content-card h2 { margin-top: 0; }
 
-/* CTA button hover (bonus) */
+hover 
 .cta-btn {
   transition: transform .15s ease, box-shadow .15s ease;
 }
@@ -49,15 +49,38 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 }
 
-/* responsive tweaks */
+
 @media (max-width: 575.98px) {
   .sidebar-card, .ad-card, .content-card { padding: 12px; }
 }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
-  /* Medium screens: left and content stack into two columns */
+
   .sidebar-card { margin-bottom: 0; }
 }
 
-/* ensure ad is visible (helpful for graders) */
+
 .ad-card img { display: block; margin-left: auto; margin-right: auto; }
+
+
+   Custom background colors for each layout box
+
+.header-box {
+  background-color: #e4a199; 
+}
+
+.left-box {
+  background-color: #b6ffc0; 
+}
+
+.content-box {
+  background-color: #b2cdf7; 
+}
+
+.ad-box {
+  background-color: #f7ebbb; /
+}
+
+.footer-box {
+  background-color: #dbc3f5; 
+}
