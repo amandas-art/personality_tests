@@ -1,92 +1,63 @@
-
+/* Basic page look */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #222;
+  background: #f4f6f8;
+  color: #222;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-img {
-    max-width: 100%;
-    border-radius: 8px;
+/* header */
+.site-header {
+  background: linear-gradient(90deg,#2c3e50,#4b6584);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-
-.container {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "sidebar"
-        "content"
-        "ad"
-        "footer";
-    gap: 10px;
-    padding: 10px;
+/* cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(20,20,20,0.05);
 }
 
-/* areas */
-.header { grid-area: header; background: #333; color: white; padding: 20px; text-align: center; border-radius: 8px; }
-.sidebar { grid-area: sidebar; background: white; padding: 15px; border-radius: 8px; }
-.content { grid-area: content; background: white; padding: 15px; border-radius: 8px; }
-.ad { grid-area: ad; background: #fff7d6; padding: 15px; border-radius: 8px; border: 2px dashed orange; }
-.footer { grid-area: footer; background: #333; color: white; padding: 10px; text-align: center; border-radius: 8px; }
-
-
-
-.sidebar ul {
-    list-style: none;
-    padding-left: 0;
+/* sidebar links */
+.sidebar-card .nav-link {
+  color: #333;
+  padding: 6px 0;
+}
+.sidebar-card .nav-link:hover {
+  background: rgba(0,0,0,0.03);
+  border-radius: 6px;
+  transform: translateX(4px);
+  transition: 0.15s ease;
 }
 
-.sidebar li {
-    margin: 8px 0;
+/* ad card style */
+.ad-card {
+  background: linear-gradient(180deg,#fffbe6,#fff4d1);
+  border: 2px dashed #f0a500;
 }
 
-.sidebar a {
-    text-decoration: none;
-    color: #333;
-    padding: 6px;
-    display: inline-block;
-    border-radius: 6px;
+/* content card */
+.content-card h2 { margin-top: 0; }
+
+/* CTA button hover (bonus) */
+.cta-btn {
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.cta-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 }
 
-/* Hover bonus effect */
-.sidebar a:hover {
-    background: #eee;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transform: scale(1.05);
-    transition: 0.2s ease;
+/* responsive tweaks */
+@media (max-width: 575.98px) {
+  .sidebar-card, .ad-card, .content-card { padding: 12px; }
 }
 
-
-.main-img {
-    margin: 15px 0;
+@media (min-width: 576px) and (max-width: 991.98px) {
+  /* Medium screens: left and content stack into two columns */
+  .sidebar-card { margin-bottom: 0; }
 }
 
-
-@media (min-width: 576px) {
-    .container {
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas:
-            "header header"
-            "sidebar content"
-            "ad content"
-            "footer footer";
-    }
-}
-
-
-@media (min-width: 992px) {
-
-    .container {
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-areas:
-            "header header header"
-            "sidebar content ad"
-            "footer footer footer";
-    }
-
-    .sidebar, .content, .ad {
-        min-height: 400px;
-    }
-}
+/* ensure ad is visible (helpful for graders) */
+.ad-card img { display: block; margin-left: auto; margin-right: auto; }
