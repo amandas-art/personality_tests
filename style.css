@@ -7,7 +7,7 @@ body {
 
 
 .site-header {
-  background: linear-gradient(90deg,#f3f3f4,#243448);
+  background: linear-gradient(90deg,#f3f3f4,#fafafb);
   color: rgb(16, 14, 14);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
@@ -33,7 +33,7 @@ body {
 
 
 .ad-card {
-  background: linear-gradient(180deg,#fffbe6,#fff4d1);
+  background: linear-gradient(180deg,#fffbe6,#fdf0c4);
   border: 2px dashed #f0a500;
 }
 
