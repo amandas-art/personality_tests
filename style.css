@@ -7,8 +7,8 @@ body {
 
 
 .site-header {
-  background: linear-gradient(90deg,#2c3e50,#4b6584);
-  color: white;
+  background: linear-gradient(90deg,#f3f3f4,#243448);
+  color: rgb(16, 14, 14);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
@@ -70,7 +70,7 @@ hover
 }
 
 .left-box {
-  background-color: #b6ffc0; 
+  background-color: #ceefd3; 
 }
 
 .content-box {
@@ -82,7 +82,7 @@ hover
 }
 
 .footer-box {
-  background-color: #dbc3f5; 
+  background-color: #eddefd; 
 }
    Suggestions 
    .suggestions-list {
